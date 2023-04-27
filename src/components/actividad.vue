@@ -1,8 +1,6 @@
-
 <template>
     <div>
         <v-container>
-            
   <v-card
     class="mx-auto"
     width=" 810px"
@@ -147,25 +145,21 @@
 
         </v-container>
     </div>
-
-
-
 </template>
 <script>
-  export default {
-    data: () => ({
+  export default{
+    name:"App",
+    data: () => {
+      return {
       r:[],
       sh:false,
       show: false,
       reveal: false,
       models: {
         base: false,
-        
-      },
-       
-     
-  
-    }),
+      }
+    }
+    },
     methods: {
       impro(){
   this.r=[];
@@ -214,13 +208,7 @@ this.sh=true;
     },
     },
 
-       }
-    
-    
-   
-    
-  
-  
+       } 
 </script>
 <style scoped>
 .box-iner {
@@ -299,7 +287,3 @@ hr{
 }
 
 </style>
-
-      
-
-     

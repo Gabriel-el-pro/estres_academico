@@ -51,7 +51,7 @@
           v-on="on"
           
         >
-        <router-link to="/actividades">
+        <router-link to="/actividad">
         <img src="../../public/actividad.png" width="100" class="animation">
        </router-link>
         </v-btn>
