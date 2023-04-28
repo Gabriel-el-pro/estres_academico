@@ -1,147 +1,28 @@
 <template>
     <div>
         <v-container>
-  <v-card
-    class="mx-auto"
-    width=" 810px"
-    height="450px"
-  >
-    <v-card-text>
-      <h3 class="v-card__title headline red lighten-5" >Actividad 1</h3>
-      <h2>¿Cuáles son los tipos de diagrama de flujo?</h2>
-      <br>
-     <v-list>
-       <v-list-item
-      v-click-outside="{
-        handler: onClickOutsideStandard,
-        include: include,
-      }"
-      @click="models.base = true"
-    >
-      <v-list-item-title>Horizontal, vertical, paralelo</v-list-item-title>
-
-      <v-list-item-action>
-        <v-icon :color="models.base ? 'red' : 'gray'">
-          mdi-record
-        </v-icon>
-      </v-list-item-action>
-    </v-list-item>
-     <v-list-item
-      v-click-outside="{
-        handler: onClickOutsideStandard,
-        include: include,
-      }"
-      @click="models.base = true"
-    >
-      <v-list-item-title>Horizontal, vertical, panorámico y arquitectónico</v-list-item-title>
-
-      <v-list-item-action>
-        <v-icon :color="models.base ? 'green' : 'gray'">
-          mdi-record
-        </v-icon>
-      </v-list-item-action>
-    </v-list-item>
-     <v-list-item
-      v-click-outside="{
-        handler: onClickOutsideStandard,
-        include: include,
-      }"
-      @click="models.base = true"
-    >
-      <v-list-item-title>Horizontal y arquitectónico</v-list-item-title>
-
-      <v-list-item-action>
-        <v-icon :color="models.base ? 'red' : 'gray'">
-          mdi-record
-        </v-icon>
-      </v-list-item-action>
-    </v-list-item>
-     </v-list>
-    </v-card-text>
-    <br>
-    <v-card-actions>
-      <v-btn
-           rounded
-            large
-        color="red accent-1"
-        @click="reveal = true"
-       
-      >
-        Siguiente
-      </v-btn>
-    </v-card-actions>
-
-    <v-expand-transition>
-      <v-card
-        v-if="reveal"
-        class="transition-fast-in-fast-out v-card--reveal"
-        height="100%"
-       
-      >
-        <v-card-text class="pb-0" >
-          <h3 class="v-card__title headline red lighten-5 ">Actividad 2</h3>
-          <h3>En el siguiente digrama de flujo se quiere sumar dos números, si el primero es mayor que el segundo. Arrastre las imagenes de la izquierda segun sea el caso, para completar el diagrama.
-  </h3>
-        <div class="ima">
-           <div id="1" class="font" :style="{ backgroundImage:'url('+require('../assets/estomago.png')+')','background-size': '100% 100%', height:'40px',width:'100px',backgroundRepeat:'no-repeta',backgroundSize:'cover'}"  draggable="true" @dragstart="drag" @dragend="end"></div>
-             <div id="2" class="font" :style="{ backgroundImage:'url('+require('../assets/boca.png')+')','background-size': '100% 100%', height:'40px',width:'200px',backgroundRepeat:'no-repeta',backgroundSize:'cover'}"  draggable="true" @dragstart="drag" @dragend="end"></div>
-               <div id="3" class="font" :style="{ backgroundImage:'url('+require('../assets/cerebro.png')+')','background-size': '100% 100%', height:'40px',width:'100px',backgroundRepeat:'no-repeta',backgroundSize:'cover'}"  draggable="true" @dragstart="drag" @dragend="end"></div>
-                 <div id="4" class="font" :style="{ backgroundImage:'url('+require('../assets/corazon.png')+')','background-size': '100% 100%', height:'40px',width:'200px',backgroundRepeat:'no-repeta',backgroundSize:'cover'}"  draggable="true" @dragstart="drag" @dragend="end"></div>
-      </div>
-         <div class="pelao">
-           <div id="box-droppable" class="box-iner" @drop="drop" @dragover="allowDrop"> </div>
-            <div id="box-droppable" class="box-iner2" @drop="drop" @dragover="allowDrop"> </div>
-         </div>
-         
-
-
-    
- <v-tooltip bottom color="red"
-          v-model="sh"
-          top
-          
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <label
+          <template>
+            <v-carousel hide-delimiters
             
-              icon
-              v-bind="attrs"
-              v-on="on"
-              
+             >
+              <v-carousel-item
+                cover
               >
-            
-            </label>
-          </template>
-          <span style="font-size:30px;color:blue;">Incorrecto</span>
-        </v-tooltip>
-
-
-    
-        <v-tooltip bottom color="green"
-          v-model="show"
-          top
-          
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <label
-            
-              icon
-              v-bind="attrs"
-              v-on="on"
-              
+  <iframe src="https://h5p.org/h5p/embed/1381976" width="850" height="420" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Crossword"></iframe>
+              </v-carousel-item>
+              <v-carousel-item
+                cover
               >
-            
-            </label>
-          </template>
-          <span style="font-size:30px;color:blue;">Correcto</span>
-        </v-tooltip>
-     
-
-        </v-card-text>
-        
-      </v-card>
-    </v-expand-transition>
-  </v-card>
+  <iframe src="https://h5p.org/h5p/embed/1381984" width="850" height="420" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Crossword"></iframe>
+              </v-carousel-item>
+              <v-carousel-item
+                cover
+              >
+  <iframe src="https://h5p.org/h5p/embed/1381989" width="850" height="420" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Crossword"></iframe>
+              </v-carousel-item>
+              </v-carousel>
+              </template>
+ 
 
         </v-container>
     </div>

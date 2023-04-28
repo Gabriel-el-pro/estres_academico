@@ -6,7 +6,7 @@
          <div >
 
 <img src="../../public/doctor.png"  width="110" height="80">
-<h2 class="display-1 mr-3 ">Diagrama De Flujo</h2>
+<h2 class="display-1 mr-3 ">ESTRÉS ACADÉMICO</h2>
 <hr>
 </div>
     <v-tooltip bottom  color="blue darken-1">
@@ -125,10 +125,10 @@ export default {
  h2{
   font: bold 80px/1 arial;
   text-transform: uppercase;
-  color: rgb(250, 166, 40);
-  text-shadow: 0  2px 0 black,
-               0  4px 0 black,
-               0  6px 0 black;
+  color: rgb(176, 108, 6);
+  text-shadow: 0  2px 0 rgb(68, 58, 30),
+               0  4px 0 rgb(139, 109, 44),
+               0  6px 0 rgb(151, 126, 56);
               
  }
 .animation{

@@ -23,7 +23,7 @@
   </v-row>
 </v-container>
 <h1>
-   Diagrama De Flujo
+  ESTRÉS ACADÉMICO
     </h1>
 </v-main>
   
@@ -50,7 +50,7 @@ export default {
  margin-top: -200px;
   font: bold 80px/1 arial;
   text-transform: uppercase;
-  color: rgb(150, 3, 40);
+  color: rgb(3, 27, 150);
   text-shadow: 0  2px 0 black,
                0  4px 0 black,
                0  6px 0 black,

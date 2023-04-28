@@ -8,7 +8,7 @@
   >
     <v-card-text v-if="pantalla==1">
       <h3 class="v-card__title headline green lighten-2" >Evaluacion</h3>
-      <h2>¿Qué es un diagrama de flujo?</h2>
+      <h2>¿Cual es una las causas del estrés de rutina?</h2>
       <br>
      <v-list>
        <v-list-item
@@ -18,7 +18,7 @@
       }"
       @click="pregunta(1)"
     >
-      <v-list-item-title>Es una cadena de texto. </v-list-item-title>
+      <v-list-item-title>Tenemos el divorcio, enfermedad, perdida de trabajo. </v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta1==1 ? 'green' : 'red'">
@@ -33,7 +33,7 @@
       }"
       @click="pregunta(2)"
     >
-      <v-list-item-title>Es una representación grafica de un proceso o algoritmo.</v-list-item-title>
+      <v-list-item-title>Las demandas del trabajo, la escuela, las necesidades familiares.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta1==2 ? 'green' : 'red'">
@@ -48,7 +48,7 @@
       }"
       @click="pregunta(3)"
     >
-      <v-list-item-title>Es un programa informático.</v-list-item-title>
+      <v-list-item-title>Este ocurre cuando sufre un daño grave o la muerte.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta1==3 ? 'green' : 'red'">
@@ -64,7 +64,7 @@
      <v-card-text v-if="pantalla==2">
       <h3 class="v-card__title headline green lighten-2" >Evaluacion</h3>
       <h2>
-En los diagramas de flujo se utiliza:</h2>
+El estrés academico es un tema de interes para:</h2>
       <br>
      <v-list>
        <v-list-item
@@ -74,7 +74,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_2(1)"
     >
-      <v-list-item-title>Una serie de figuras geométricas.</v-list-item-title>
+      <v-list-item-title>Padres, psicólogos y docentes.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta2==1 ? 'green' : 'red'">
@@ -89,7 +89,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_2(2)"
     >
-      <v-list-item-title>Cuadros y círculos. </v-list-item-title>
+      <v-list-item-title>Fisiológicas, emocionales, cognitivas  y conductuales.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta2==2 ? 'green' : 'red'">
@@ -104,7 +104,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_2(3)"
     >
-      <v-list-item-title>Representaciones graficas.</v-list-item-title>
+      <v-list-item-title>Estímulos y eventos académicos.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta2==3 ? 'green' : 'red'">
@@ -119,7 +119,7 @@ En los diagramas de flujo se utiliza:</h2>
 
      <v-card-text v-if="pantalla==3">
       <h3 class="v-card__title headline green lighten-2" >Evaluacion</h3>
-      <h2>Las figuras que forman un diagrama de flujo se conectan mediante:</h2>
+      <h2>El estrés académico se encuentra influenciado por factores como:</h2>
       <br>
      <v-list>
        <v-list-item
@@ -129,7 +129,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_3(1)"
     >
-      <v-list-item-title>Flechas.</v-list-item-title>
+      <v-list-item-title>El género, la edad, la profesión y las estrategias de afrontamiento.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta3==1 ? 'green' : 'red'">
@@ -144,7 +144,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_3(2)"
     >
-      <v-list-item-title>Cuadros. </v-list-item-title>
+      <v-list-item-title>Padres, psicólogos, docentes. </v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta3==2 ? 'green' : 'red'">
@@ -159,7 +159,7 @@ En los diagramas de flujo se utiliza:</h2>
       }"
       @click="pregunta_3(3)"
     >
-      <v-list-item-title>Círculos.</v-list-item-title>
+      <v-list-item-title>Incrementa de las situaciones de miedo.</v-list-item-title>
 
       <v-list-item-action>
         <v-icon :color="pregunta3==3 ? 'green' : 'red'">
@@ -178,9 +178,9 @@ En los diagramas de flujo se utiliza:</h2>
       <h3 class="v-card__title headline green lighten-2" >Evaluacion</h3>
       <h2>Relacione los tipos de diagrama de flujo con su organización. Seleccione primero el tipo y luego la organización.</h2>
       <div class="yo">
-        <a>  <div class="keti"  @click="pato1()">Horizontal.</div></a>
-           <a><div class="keti" @click="pato2()">Vertical.</div></a>
-          <a> <div class="keti" @click="pato3()">Panorámico.</div></a>
+        <a>  <div class="keti"  @click="pato1()">Traumático.</div></a>
+           <a><div class="keti" @click="pato2()">Por cambios.</div></a>
+          <a> <div class="keti" @click="pato3()">Rutina.</div></a>
       </div>
       <svg height="300" width="110" >
 <line v-if="linea1==1"  x1="0" y1="70" x2="500" y2="60" style="stroke:blue;stroke-width:7" />
@@ -196,9 +196,9 @@ En los diagramas de flujo se utiliza:</h2>
 <line v-if="linea3==3" x1="0" y1="240" x2="500" y2="220" style="stroke:red;stroke-width:7" />
       </svg>
       <div class="tu">
-         <a>  <div class="cosa" @click="pato(1)">Se organiza de arriba – abajo como una lista ordenada.</div></a>
-         <a>    <div class="cosa" @click="pato(2)">Permite ver todo el proceso en una misma hoja.</div></a>
-         <a>  <div class="cosa" @click="pato(3)">Se organiza de izquierda a derecha. </div></a>
+         <a>  <div class="cosa" @click="pato(1)">Tenemos el divorcio, enfermedad, perdida de trabajo.</div></a>
+         <a>    <div class="cosa" @click="pato(2)">Esto es debido a las demandas del trabajo, la escuela, las necesidades familiares.</div></a>
+         <a>  <div class="cosa" @click="pato(3)">Este ocurre cuando sufre un daño grave o la muerte. </div></a>
     
       </div>
 
@@ -381,7 +381,8 @@ max-width: 500px;
 height:300px;
     }
     .keti{
-        font-size:28px;
+      padding: 5px;
+        font-size:20px;
         width: 160px;
         max-height:50px;
         border-radius:20px;
@@ -389,7 +390,8 @@ height:300px;
         background-color: rgba(165, 42, 42, 0.39);
     }
     .cosa{
-font-size:30px;
+font-size:20px;
+padding: 5px;
         width: 500px;
         max-height:50px;
         border-radius:20px;
