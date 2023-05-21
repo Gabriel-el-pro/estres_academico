@@ -203,36 +203,7 @@ El estrés academico es un tema de interes para:</h2>
       </div>
 
 
-<v-row justify="center">
-    <v-dialog
-      v-model="dialog"
-      persistent
-      max-width="350"
-      
-    >
-      
-      <v-card>
-        
-<v-tex  style="color:green;font-size:40px">Su nota es:<label> {{nota}}</label></v-tex>
-       <v-card-actions>
-          <v-spacer></v-spacer>
-         
-          <v-btn 
-             color="blue accent-1"
-        @click="reinicia()"
-       style="position:absolute;
-         left:25%;
-         top:67%;
-         width:50%;"
-          >
-           <h2> Aceptar</h2>
-          </v-btn>
-          
-        </v-card-actions>
-        
-      </v-card>
-    </v-dialog>
-  </v-row>
+
 <v-card-actions>
           <v-spacer></v-spacer>
          
@@ -266,9 +237,34 @@ El estrés academico es un tema de interes para:</h2>
       </v-btn>
     </v-card-actions>
 
-
+   
+  </v-card>
+  <v-card>
+    <v-card style="max-width:350px" v-if="dialog==true">
+      
+      <v-tex  style="color:green;font-size:40px">Su nota es:<label> {{nota}}</label></v-tex>
+           <v-card-actions>
+              <v-spacer></v-spacer>
+             
+              <v-btn 
+                 color="blue accent-1"
+            @click="reinicia()"
+           style="position:absolute;
+             left:25%;
+             top:67%;
+             width:50%;"
+              >
+               <h2> Aceptar</h2>
+              </v-btn>
+              
+            </v-card-actions>
+            
+          </v-card>
+    
   </v-card>
         </v-container>
+        
+         
        
     </div>
 </template>
@@ -397,5 +393,10 @@ padding: 5px;
         border-radius:20px;
         margin-top:40px;
         background-color: rgba(238, 171, 171, 0.39);
+    }
+    @media (max-width: 500px) {
+      .buelta{
+       transform: rotate(90deg);
+      }
     }
 </style>

@@ -23,8 +23,9 @@
             :overlay="false"
             max-width="500px"
             transition="dialog-transition"
+            
           >
-            <v-card :img="info.avatar" width="500" height="500">
+            <v-card :img="info.avatar" width="500" height="500" class="buelta" >
               
             </v-card>
           </v-dialog>
@@ -46,7 +47,7 @@
             max-width="500px"
             transition="dialog-transition"
           >
-            <v-card :img="info.avatar" width="500" height="500">
+            <v-card class="buelta" :img="info.avatar" width="500" height="500">
               
             </v-card>
           </v-dialog>
@@ -144,7 +145,13 @@ export default {
   },
 }
 </script>
-
+<style scoped>
+@media (max-width: 500px) {
+  .buelta{
+   transform: rotate(90deg);
+  }
+}
+</style>
  
 
 

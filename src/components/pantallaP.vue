@@ -1,6 +1,6 @@
 <template>
-<v-main  class="fondo">
-  <div class="container ">
+<div  class="fondo">
+  <div class="container">
  
     <div class="text-center d-flex align-center justify-space-around">
          <div >
@@ -9,10 +9,11 @@
 <h2 class="display-1 mr-3 ">ESTRÉS ACADÉMICO</h2>
 <hr>
 </div>
-    <v-tooltip bottom  color="blue darken-1">
-      <template v-slot:activator="{ on, attrs }">
+    <v-tooltip  bottom  color="blue darken-1">
+      <template v-slot:activator="{ on, attrs }" >
       <v-btn
           fab
+          
           v-bind="attrs"
           v-on="on"
           
@@ -91,14 +92,11 @@
 
   </div>
   </div>
-  
-  
-
   <v-col align="center" justify="center">
         <router-view></router-view>
     </v-col>
  
-</v-main>
+  </div>
   
    
     
@@ -114,14 +112,30 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width:500px) {
+  .fondo{
+    transform: rotate(90deg);
+   
+    width: 1020px;
+    margin: 100px;
+      background: url(../../public/imagen.jpg) ;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+  }
+@media (min-width: 510px) {
 .fondo{
-    
-    background: url(../../public/imagen.jpg) no-repeat center center fixed;
+    background: url(../../public/imagen.jpg);
+    height: 100%;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
  }
+}
  h2{
   font: bold 80px/1 arial;
   text-transform: uppercase;
@@ -142,7 +156,16 @@ export default {
 @keyframes boton{0%{transform:scale(1);}to{transform: scale(1.1);}}
 hr {border-radius: 10px; width: 330%; height: 20px; box-shadow: inset 0 22px 12px -12px rgb(0, 0, 0); color: rgb(0, 0, 0); text-align: center;}
 
- 
+@media (max-width: 500px) {
+ .buelta{
+  transform: rotate(90deg);
+ }
+  hr {border-radius: 10px; width: 230%; height: 20px; box-shadow: inset 0 22px 12px -12px rgb(0, 0, 0); color: rgb(0, 0, 0); text-align: center;}
+.container{
+  margin-left: 80px;
+  width: 790px;
+}
 
+}
 </style>
 

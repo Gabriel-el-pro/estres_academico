@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import pantallaInicio from "../components/pantallaInicio";
 import pantallaP from "../components/pantallaP";
-
+import prueba from "../components/prueba";
 import introduccion from "../components/introduccion";
 import actividad from "../components/actividad";
 import evaluacion from "../components/evaluacion";
@@ -27,7 +27,11 @@ const routes = [{
                 name: 'introduccion',
                 component: introduccion,
             },
-
+            {
+                path: '/pantallaP',
+                name: 'prueba',
+                component: prueba,
+            },
             {
                 path: '/actividad',
                 name: 'act',
