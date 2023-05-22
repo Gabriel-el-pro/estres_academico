@@ -176,7 +176,7 @@ El estrés academico es un tema de interes para:</h2>
 
  <v-card-text v-if="pantalla==4">
       <h3 class="v-card__title headline green lighten-2" >Evaluacion</h3>
-      <h2>Relacione los tipos de diagrama de flujo con su organización. Seleccione primero el tipo y luego la organización.</h2>
+      <h2>Relacione los tipos de estrés académicos con sus causas. Seleccione primero el tipo y luego las causas.</h2>
       <div class="yo">
         <a>  <div class="keti"  @click="pato1()">Traumático.</div></a>
            <a><div class="keti" @click="pato2()">Por cambios.</div></a>
@@ -208,6 +208,7 @@ El estrés academico es un tema de interes para:</h2>
           <v-spacer></v-spacer>
          
           <v-btn 
+          v-if="dialog==false"
              color="green accent-1"
         @click="nota_f()"
        style="position:absolute;
